@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Consultation | General Physician</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/Logo.svg.png" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#"><i class="fas fa-user-md"></i> Doctors</a>
+                <a href="#"><i class="fas fa-pills"></i> Pharmacy</a>
+                <a href="#"><i class="fas fa-flask"></i> Lab Tests</a>
+                <a href="#"><i class="fas fa-notes-medical"></i> Health Records</a>
+                <button class="login-btn">Login / Signup</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>General Physician / Internal Medicine</h1>
+            <p>Consult top doctors online for any health concern</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <i class="fas fa-user-md"></i>
+                    <span>1000+ Doctors</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-users"></i>
+                    <span>10M+ Patients</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-star"></i>
+                    <span>4.8 Rating</span>
+                </div>
+            </div>
+            <button class="consult-btn">Consult Now</button>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters">
+        <div class="filter-container">
+            <div class="filter-group">
+                <label>Availability</label>
+                <select id="availability">
+                    <option>Any Time</option>
+                    <option>Available Today</option>
+                    <option>Available Tomorrow</option>
+                    <option>Next 7 Days</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Experience</label>
+                <select id="experience">
+                    <option>All</option>
+                    <option>0-5 years</option>
+                    <option>5-10 years</option>
+                    <option>10+ years</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Fee Range</label>
+                <select id="fee">
+                    <option>All</option>
+                    <option>₹0-500</option>
+                    <option>₹501-1000</option>
+                    <option>₹1000+</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctor Cards Section -->
+    <section class="doctors">
+        <h2>Available Doctors</h2>
+        <div class="doctor-grid" id="doctorGrid">
+            <!-- Doctor cards will be added dynamically via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login / Signup</h2>
+            <form id="loginForm">
+                <input type="text" placeholder="Email or Phone" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p>New user? <a href="#">Register here</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
